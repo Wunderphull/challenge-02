@@ -1,0 +1,109 @@
+:root {
+  --Color1: #A65353;
+  --Color2: #8C6F65;
+  --Color3: #F2F2F2;
+  --Color4: #BFA399;
+  --Color5: #401D1A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background: var(--Color3);
+  color: var(--Color5);
+}
+
+header h1 {
+  font-size: 10vw;
+  margin: 0 0;
+}
+
+header p {
+  margin: 0 0;
+  padding: 0 0 10px 0;
+}
+
+nav {
+  display: flex;
+  background-color: var(--Color5);
+}
+
+nav a {
+  color: var(--Color3);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+main div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1 2;
+  background-color: var(--Color3);
+  border-right:  var(--Color1) 0.75vw solid;
+  padding: 3vw;
+  text-align: right;
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--Color1);
+  color: var(--Color3);
+}
+
+.section {
+  flex: 4;
+  background-color: var(--Color3);
+  padding: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1vw 0;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+@media screen and (max-width: 564) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 564) {
+  main, div {
+    display: inline-block;
+    background-color: var(--Color5);
+  }
+}
